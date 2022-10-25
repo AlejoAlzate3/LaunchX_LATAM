@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos el Jefe</title>
+</head>
+<body>
+    <header>
+        <h1>Tacos el Jefe</h1>
+    </header>
+
+    <img src="img/Tacos El Jefe.png" alt="Logo">
+
+    <h2>Menú</h2>
+    <h3>Tacos Grandes</h3>
+    <p>Todos incluyen nopales y cebolla</p>
+    <ul>
+        <li>Bistec ............... $30</li>
+        <li>Chorizo .............. $30</li>
+        <li>Chuleta .............. $30</li>
+        <li>Pastor ............... $30</li>
+        <li>Campechanos .......... $30</li>
+    </ul>
+
+    <h3>Tacos Pequeños</h3>
+    <p>Con cilantro y cebolla</p>
+    <ul>
+        <li>Bistec ............... $15</li>
+        <li>Chorizo .............. $15</li>
+        <li>Chuleta .............. $15</li>
+        <li>Pastor ............... $15</li>
+        <li>Campechanos .......... $15</li>
+    </ul>
+
+    <h3>Espciales</h3>
+    <p>Haz tu combo con un refresco por $10 más</p>
+    <dl>
+        <dt>Labrador ............... $40</dt>
+        <dd>Tortilla de maiz con pollo asado</dd>
+        <dt>Pastor aleman .......... $40</dt>
+        <dd>Tortilla de harina con carne de res y queso</dd>
+        <dt>ShibaInu ............... $40</dt>
+        <dd>Tortilla de maiz con pastor</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Ubicación</h2>
+    <h3>Sucursales</h3>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Ubicación</th>
+            <th>Horarios</th>
+        </tr>
+        <tr>
+            <td>Centro</td>
+            <td><a href="Cra 15 #20a - 21, Armenia, Quindío">KFC Centro</a></td>
+            <td>L - D 24H</td>
+        </tr>
+        <tr>
+            <td>Sur</td>
+            <td><a href="AV. BOLIVAR 19 NORTE #46-05 Centro Comercial Portal Quindio, Local 1, Armenia, Quindío">KFC Portal Quindio</a></td>
+            <td>L -D 2pm - 10pm</td>
+        </tr>
+        <tr>
+            <td>Norte</td>
+            <td><a href="AV. BOLIVAR 19 NORTE #46-05 Centro Comercial Portal Quindio, Local 1, Armenia, Quindío">KFC Portal Quindio</a></td>
+            <td>L -D 12m - 11pm</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Pedidos</h2>
+    <h3>Haz tu pedido aquí</h3>
+
+    <form action="">
+        <p>¿De que taquería quieres?</p>
+            <select>
+                <option value="Norte">Norte</option>
+                <option value="Centro">Centro</option>
+                <option value="Sur">Sur</option>
+            </select>  
+
+        <p>¿De que tacos quieres?</p>
+            <input type="checkbox" name="Bistec" id="Bistec" value="Bistec">
+            <label for="Bistec">Bistec</label>
+            <input type="number" name="BistecNumber" id="BistecNumber" placeholder="¿Cuantos?">
+            <br>
+            <input type="checkbox" name="Chorizo" id="Chorizo" value="Chorizo">
+            <label for="Chorizo">Chorizo</label>
+            <input type="number" name="ChorizoNumber" id="ChorizoNumber" placeholder="¿Cuantos?">
+            <br>
+            <input type="checkbox" name="Pastor" id="Pastor value="Pastor">
+            <label for="Pastor">Pastor</label>
+            <input type="number" name="PastorNumber" id="PastorNumber" placeholder="¿Cuantos?">
+            <br>
+            <input type="checkbox" name="Chuleta" id="Chuleta" value="Chuleta">
+            <label for="Chuleta">Chuleta</label>
+            <input type="number" name="ChuletaNumber" id="ChuletaNumber" placeholder="¿Cuantos?">
+            <br>
+            <input type="checkbox" name="Campechanos" id="Campechanos" value="Campechanos">
+            <label for="Campechanos">Campechanos</label>
+            <input type="number" name="CampechanosNumber" id="CampechanosNumber" placeholder="¿Cuantos?">
+            <br>
+    </form>
+</body>
+</html>
