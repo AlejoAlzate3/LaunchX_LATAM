@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/SpacePastry.png">
+    <title>Space Pastry</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Space Pastry</h1>
+        <img src="img/SpacePastry.png" alt="" width="20%" heigth="20%" style="position:15pm">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#pedidos">Pedidos</a></li>
+            <li><a href="#footer">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <section>
+        <p>Somos la mejor pastelería de Colombia, nos dedicamos
+            a la elaboración de pasteles de todo tipo, con los mejores
+            ingredientes y con la mejor calidad. Nuestros pasteles son
+            elaborados con amor y dedicación, para que usted pueda disfrutar
+            y deleitar su paladar.
+        </p>
+        <p>A continuación podra ver nuestro menú, donde podra
+            ver nuestra variedad y así poder elegir el que más le guste
+            y realice su pedido.
+        </p>
+    </section>
+
+    <main role="main">
+        <section>
+            <h2>Menú:</h2>
+            <h3>Sabores</h3>
+            <ul>
+                <li>Chocolate .......... $15</li>
+                <li>Vainilla .............. $15</li>
+                <li>Fresa ................. $15</li>
+                <li>Limón ................ $10</li>
+                <li>Maracuyá ...........$10</li>
+                <li>Manjar................ $7</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Adornos</h3>
+            <ul>
+                <li>Feliz cumpleaños personalizado .....$2</li>
+                <li>Figura de personaje .......................$5</li>
+                <li>Figura de animal ............................ $5</li>
+                <li>Adornos comestibles ......................$5</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Combinaciones</h3>
+            <p>Combina los sabores como más te guste!</p>
+            <ul>
+                <li>Chocolate y vainilla</li>
+                <li>Chocolate y fresa</li>
+                <li>Chocolate y manjar</li>
+                <li>Vainilla y fresa</li>
+                <li>Vainilla y limón</li>
+                <li>Vainilla y maracuyá</li>
+                <li>Vainilla y manjar</li>
+                <li>Fresa y limón</li>
+                <li>Fresa y maracuyá</li>
+                <li>Fresa y manjar</li>
+                <li>Limón y manjar</li>
+                <li>Maracuyá y manjar</li>
+            </ul>
+            <p>Tambien puedes combinar los adornos!</p>
+            <ul>
+                <li>Figura de personaje y adornos comestibles</li>
+                <li>Figura de animal y adornos comestibles</li>
+                <li>Feliz cumpleaños personalizado y adornos comestibles</li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    <h2>Pedidos</h2>
+    <h3>Haz tu pedido aquí!</h3>
+
+    <form action="" id="pedidos" method="post">
+        <table border="1">
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" name="nombre" id="nombre" required></td>
+            </tr>
+            <tr>
+                <td><label for="telefono">Telefono:</label></td>
+                <td><input type="tel" name="telefono" id="telefono" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="descripcion">Descripción general del pastel:</label></td>
+                <td><textarea name="descripcion" id="descripcion" cols="20" rows="10"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><p>¿De que Pastelería lo quieres?</p></td>
+                <td>
+                    <select>
+                        <option value="Norte">Norte</option>
+                        <option value="Centro">Centro</option>
+                        <option value="Sur">Sur</option>
+                    </select>
+                </td>
+            </tr>
+
+        <tr>
+            <td>
+                <p>Seleccione los sabores:</p>
+            </td>
+            <td>
+                <input type="checkbox" name="sabores" id="sabores">
+                <label for="sabores">Chocolate</label>
+                <br>
+                <input type="checkbox" name="sabores" id="sabores">
+                <label for="sabores">Vainilla</label>
+                <br>
+                <input type="checkbox" name="sabores" id="sabores">
+                <label for="sabores">Fresa</label>
+                <br>
+                <input type="checkbox" name="sabores" id="sabores">
+                <label for="sabores">Limón</label>
+                <br>
+                <input type="checkbox" name="sabores" id="sabores">
+                <label for="sabores">Maracuyá</label>
+                <br>
+                <input type="checkbox" name="sabores" id="sabores">
+                <label for="sabores">Manjar</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Seleccione los adornos:</p>
+            </td>
+            <td>
+                <input type="checkbox" name="adornos" id="adornos">
+                <label for="adornos">Feliz cumpleaños personalizado</label>
+                <br>
+                <input type="checkbox" name="adornos" id="adornos">
+                <label for="adornos">Figura de personaje</label>
+                <br>
+                <input type="checkbox" name="adornos" id="adornos">
+                <label for="adornos">Figura de animal</label>
+                <br>
+                <input type="checkbox" name="adornos" id="adornos">
+                <label for="adornos">Adornos comestibles</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button type="submit">
+                    <a href="#pedidosPastelero" target="_blank"></a>
+                    Enviar Pedido
+                </button>
+            </td>
+        </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <footer id="footer">
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Ubicación</th>
+                <th>Telefono</th>
+                <th>Horarios</th>
+            </tr>
+            <tr>
+                <td>Centro</td>
+                <td><a href="Cra 15 #20a - 21, Armenia, Quindío">SpacePastry Centro</a></td>
+                <td>3152596284</td>
+                <td>L - S 8am - 10pm</td>
+            </tr>
+            <tr>
+                <td>Sur</td>
+                <td><a href="AV. BOLIVAR 19 NORTE #46-05 Centro Comercial Portal Quindio, Local 1, Armenia, Quindío">SpacePastry Sur</a></td>
+                <td>3132596284</td>
+                <td>L - S 2pm - 10pm</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td><a href="AV. BOLIVAR 19 NORTE #46-05 Centro Comercial Portal Quindio, Local 1, Armenia, Quindío">SpacePastry Norte</a></td>
+                <td>3102596284</td>
+                <td>L - S 2pm - 10pm</td>
+            </tr>
+        </table>
+
+        <p>©Copyright 2022 SpacePastry. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
