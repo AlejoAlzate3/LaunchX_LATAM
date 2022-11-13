@@ -63,3 +63,34 @@ try{
 }catch(error){
     console.log("Hubo un Error: ", error);
 }
+
+// Asincrono
+setTimeout(() => console.log("Tick"), 500);
+
+let fifteen = Promise.resolve(15);
+fifteen.then(value => console.log(`Got ${value}`));
+
+const promesa = () =>
+    new Promise((resolve, reject) =>
+        setTimeout(
+            () => (resolve(console.log("Done!")), reject(new Error("Oops"))),
+            2000
+        )
+    );
+
+async function main(){
+    promesa()
+        .then(()=> {
+            promesa()
+                .then(()=> console.log("Hola"))
+                .catch(error => console.log("Error: ", error));
+        })
+        .catch(error => console.log("Error: ", error));
+
+    await promesa();
+    console.log("Aqui termina la primer promesa");
+    await promesa();
+    console.log("Aqui termina la segunda promesa");
+}
+
+main();
