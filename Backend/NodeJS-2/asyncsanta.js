@@ -28,6 +28,7 @@ function envolverRegalo(juguete){
     });
 }
 
+// Path: Backend\NodeJS-2\index.js
 (async function main() {
     const instruccion = await leerCarta("xbox Series X");
     const juguete = await construirJuguete(instruccion);

@@ -1,4 +1,4 @@
-//Proceso Asincrono
+//Proceso Asincrono de NodeJS
 http = require('http');
 
 console.log("1. Hola");
