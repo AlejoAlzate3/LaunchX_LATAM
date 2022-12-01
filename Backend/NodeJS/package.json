@@ -2,13 +2,14 @@
   "name": "helloword",
   "version": "1.0.0",
   "description": "Es mi primer hola mundo",
-  "main": "helloword.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    url: ""
+    "url": "https://github.com/AlejoAlzate3/LaunchX_LATAM/tree/master/Backend/NodeJS"
   },
   "author": "alejandroalzatetovar",
   "license": "ISC",
