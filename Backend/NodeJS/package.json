@@ -1,22 +1,12 @@
 {
-  "name": "helloword",
+  "name": "santa",
   "version": "1.0.0",
-  "description": "Es mi primer hola mundo",
-  "main": "index.js",
+  "description": "",
+  "main": "santa.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "santa.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AlejoAlzate3/LaunchX_LATAM/tree/master/Backend/NodeJS"
-  },
   "author": "alejandroalzatetovar",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "mocha": "^10.1.0"
-  }
+  "license": "ISC"
 }

@@ -1,10 +1,8 @@
-const http = require('http');
-const fs = require('fs');
+//Proceso Asincrono de NodeJS
+http = require('http');
 
-http.createServer(function (req, res) {
-    fs.readFile('./pages/demo.html', function(err, data) {
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        res.write(data);
-        return res.end();
-    });
-}).listen(8080);
+console.log("1. Hola");
+http.get('http://httpstat.us/200', (resp) => {
+    console.log(`2. La api devolvio:  ${resp.statusCode}`);
+});
+console.log("3. Adios");
